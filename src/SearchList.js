@@ -1,5 +1,7 @@
 import React from "react";
+import PropTypes from 'prop-types'
 import "./SearchList.css";
+import Search from "./Search";
 
 const SearchList = ({ list }) => {
   return (
@@ -10,5 +12,9 @@ const SearchList = ({ list }) => {
     </ul>
   );
 };
+
+SearchList.PropTypes={
+  list:PropTypes.array
+}
 
 export default SearchList;
